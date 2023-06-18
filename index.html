@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Juma Emmanuel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>  
+<body>   
+  
+     <!---------------------toppage section ---------------------->
+     <section id="toppage" class="top">
+      
+            <nav class="st">
+            
+             <ul>
+               <li><a href ="#home">Home</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#services">Services</a></li>
+                
+              </ul>
+            </nav>
+        
+      </section>
+   
+        <section id="home" class="home" style="display: flex;">
+            <div id="home-img">
+                <img src="me.png">
+              </div>
+            <div class="about-text">
+            <h4>Hi, am</h4>
+            <h1>Juma <span>Emmanuel</span></h1>
+            <h3>A software developer.</h3>
+            <p>I am a full-stack developer with vast knowledge in various programming languages including
+                Java,Python,Javascript,C++,Dart,solidity among more others.I am able to develop software applications 
+                that are user friendly and efficient with a wide variety of devices.I have a great passion in the IT field 
+                and am cognisant with the new and emerging technology trends in the field of software engineering.</p>
+          </div>
+          
+             
+            
+        </section>
+        
+  
+ <!------------------------skills------------------->
+  <section id="skills" class="skills" >
+        <div class="skills-title">
+         <h3>Skills</h3>
+         </div>
+          
+        <div class="box1">
+         <div  class="card1">
+            <h5 id="content">MySQL</h5>
+            <div class="pra1">
+         <p id="float" > As a software developer, i have a strong knowledge of MySQL,
+             a popular relational database management system . Am
+              skilled in creating, managing, and querying databases using SQL, 
+             and i understand how to optimize database performance, ensure data
+              integrity, and implement security measures.</p>
+            </div>
+          </div>
+       
+               <div class="card1">
+            <h5>Project management</h5>
+            <div class="pra1">
+             <p>I am capable of managing software development projects from start to 
+                finish. Am familiar with agile methodologies and tools, such as Scrum.
+                 I can create project plans, allocate resources, track progress, identify and mitigate risks, 
+                 and ensure that projects are delivered within constraints of  time,scope  and cost.
+            </p>
+            </div>
+          </div>
+       
+
+       
+          <div class="card1">
+            <h5>Team Leadership</h5>
+            <div class="pra1">
+             <p> I have experience leading  teams of software developers.
+                 I understand how to motivate team members, manage conflict, and foster a collaborative work environment.
+                 I delegate tasks, provide feedback, and facilitate communication between team members and other stakeholders.
+            </p>
+            </div>
+          </div>
+       
+       
+
+       
+          <div class="card1">
+            <h5>Data analysis:</h5>
+            <div class="pra1">
+             <p> Am experienced in analyzing and interpreting data to make informed decisions. 
+                Am  familiar with tools such as Excel, R, and Python, and  can create data visualizations 
+                and reports that communicate insights effectively. I understand how to clean, transform, and manipulate data,
+                with my knowledge in statistical analysis, predictive modeling, and machine learning.
+              </p>
+            </div>
+          </div>
+       
+        </div>
+                    
+     </section>   
+     <!------------------------services------------------->
+     <section id="services" class="services">
+     <div class="title">
+        <h2>Services</h2>
+      </div>
+      <div class="box2">
+        <div class="card2">
+            <h5>Software Development</h5>
+        
+            <div class="pra2">
+              <p> I use programming languages and software development tools to create, test,
+                 and maintain software applications. My tasks in software development include custom software development,
+                  web application development, mobile app development
+                and much more. </p>
+                
+            </div>
+        </div>
+   
+     <div class="card2">
+          <h5>Graphic designing</h5>
+        
+           <div class="pra2">
+             <p>I use my creativity and technical expertise to develop
+                 visual solutions that communicate messages effectively and precisely. I offer a wide range of services,
+                  including logo design, website design, print design, branding, posters and much more.
+            </p>
+              
+          </div>
+      </div>
+      <div class="card2">
+           <h5>PC Repair and Maintenance</h5>
+      
+            <div class="pra2">
+               <p>I provide reliable and efficient PC hardware repair and maintenance 
+                services to ensure my  clients' computer systems are running smoothly. 
+                I do diagnosis and repair hardware issues,
+                and maintain the overall health of the computer.
+                
+            </p>
+              
+            </div>
+        </div>
+    </section>
+</div>
+    <!----------------------- hire Me--------------------->
+       <div id="hire-me"  class="hire-me" style="display: none;">
+        <h5>Hire Me</h5>
+<p> I am a passionate software developer with considerable experience in developing android applications 
+  and websites. If you are looking for a dedicated and talented software developer to join your team,please feel free to reach me out
+   </p>
+  
+       </div>
+      </div>
+
+
+      <div id="lets-talk"  class="form1" style="display: none;">
+
+        <form id="letstalk" action="userinfo.php" method="post"> 
+          <h5 id="lets">Lets talk</h5>
+        <div class="name"><label class="name"for="name">Name:</label>
+          <input type="text" id="name" class="txtfield" name="name" required>
+        </div>
+        
+                <div class="email"><label for="email" >Email:</label>
+        <input type="text" id="email" class="txtfield" name="email" required>
+        </div>
+        <div class="txtarea">
+        <label for ="message" class="message">Message:</label>
+        <textarea id ="message" name="message" class="txt"rows="1" required></textarea>
+        </div>
+        <button type="submit" id="send">Send</button>
+        </form>
+      </div>
+     <!----------------------- footer-------------------->
+              <section id="foot">
+                
+                <P>Reach<span> Out</span></P>
+                <div class="social">
+                    <a href="mailto:jumaemmanuel462@yahoo.com"><i class="fa-regular fa-envelope"></i></a>
+                   
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/juma-emmanuel-61716a271"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                    <a href="https://www.twitter.com/Juma_Emmanuelle?t=gC1AEYsPfDDbroKZFT8tAg&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <h2 class="td">Soft<span>Dev</span></h2 >
+                    <h5 class="end" >&COPY;2023</h5>
+                </div>
+              </section>
+
+              <footer id="footer" style="display: none;" >
+                
+                <P>Reach<span> Out</span></P>
+                <div class="socials">
+                                   
+                    <a href="https://github.com/Juma-Emmanuel"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/juma-emmanuel-61716a271"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.twitter.com/Juma_Emmanuelle?t=gC1AEYsPfDDbroKZFT8tAg&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <h2 class="ft">Juma<span>Emmanuel</span></h2 >
+                    <h5 class="ftend" >&COPY;2023</h5>
+                </div>
+              </footer>
+              <script src="index.js"></script>
+</body>
+</html>

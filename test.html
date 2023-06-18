@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Slide-in Transition</title>
+  <style>
+    #content {
+        background-color: aqua;
+
+      position: relative;
+      top: -100px;
+      transition: top 0.5s ease-in-out;
+    }
+    
+    #content:hover {
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+   <p>This is a content that slides in from the top when the user scrolls to the section containing the content.</p> 
+  </div>
+</body>
+</html>
