@@ -3,54 +3,77 @@
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
-
-}
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    }
+    :root{
+        --bg-color: #1f242d;
+        --second-bg-color: #323946;
+        --text-color: #fff;
+        --main-color: #0ef;
+    }
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
 body{
     background-color: black;
-    width: 100%;
+   /* width: 100%;*/
 }
-.top1{
-    background-color: black;
-    height: 7vh;
-}
+
+/*-----------------------toppage section-------------------------------*/
 .top{
-    height: 7vh;
+ height: 7vh;
 width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+padding: 2rem 9%;
+display: flex;
 background-color:rgb(0, 0, 0) ;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
 }
+span{
+    color:#f9004d;
+}
+.logo{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    cursor: default;
+    
+    }
+    #menu-icon{
+        font-size: 3.6rem;
+        color: white;
+        display: none;
+    }
+    .navbar{
+        padding-top: 50px;
+    }
 
-nav{
-
-    background-color: #191919;
-    position: fixed;
-    z-index: 100;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 47px;
-    padding-top: 25px;
-    padding-left: 32%;
-    padding-right: 8%;
-    transition: top 0.3s ease-in-out;
+.navbar a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-top: 25px; 
+    margin-left: 4rem;    
+    transition: transform .4s;
+   }
+.navbar a:hover{
+    color: #f9004d;
+    transform: scale(1.2);
+    transition: .3s;
 }
 .section{
     padding-top: 19%; 
     padding-left: 8%;
 }
-.logo{
-    color: white;
-    font-size: 35px;
-    margin-left: 5%;
-    letter-spacing: 1px;
-    cursor: pointer;
-    margin-bottom: 30px;
-    }
-    span{
-        color:#f9004d;
-    }
-    .btn{
+.btn{
         display: flex;
     justify-content: center;
     align-items: center;
@@ -68,39 +91,53 @@ nav{
     .btn:hover{
     transform: scale(1.2);
     }
-    
-    nav ul li{
-        list-style-type: none;
-        display: inline-block;
-        padding: 10px 25px;
-    }
-   
-nav ul li a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        background-color: #101010;;
-        color:white;
-        text-decoration: none;
-        border: 2px solid #f9004d;
-        font-weight: bold;
-        height: 23px;
-        border-radius: 30px;
-        margin-bottom: 30px;
-        padding: 10px 25px;
-        transition: transform .4s;
-   
-}
-nav ul li a:hover{
-    transform: scale(1.2);
-    transition: .3s;
-}
+    /*------------------------------------------------------*/
+    /*-------------------------Home section-----------------------------*/
 .home{
+    /*
     height: 80vh;
     width: 100%;
     background: #191919;
+    */
+    background: #191919;
+    display: flex;
     
+    align-items: center;
 }
+  .home-content{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-left: 21vh;
+  }
+  .home-content h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fcfc;
+  }
+  .home-content h1{
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: white;
+  }
+  .home-content h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+  }
+  #home-img{ 
+    width: auto;
+    margin: 13vh 30vh 15vh;
+     border: 3px solid #f9004d;
+   border-radius: 27px;
+  }
+  #home-img img {
+    border-radius: 20px;
+    height: 52vh;
+   
+  }
+  
+  
 .content{
     position: absolute;
     top: 50%;
@@ -137,18 +174,7 @@ nav ul li a:hover{
      }
 
    
-  #home-img{ 
-    width: auto;
-    height: 500px;
-    margin-left: 32px;
-    margin-top:43px ;
-    border: 3px solid #f9004d;
-    border-radius: 23px;
-  }
-  
-  #home-img img {
-    border-radius: 20px;
-  }
+ 
    /*-----------------------about---------------------------*/ 
    
     button{

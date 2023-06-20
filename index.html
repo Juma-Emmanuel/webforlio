@@ -14,39 +14,51 @@
   
      <!---------------------toppage section ---------------------->
      <section id="toppage" class="top">
-      
-            <nav class="st">
-            
+      <h2 class="logo">Juma<span> Emmanuel</span></h2> 
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <nav class="navbar">  
+              <a href ="#home" class="active">Home</a> 
+              <a href ="#abt">About</a> 
+              <a href="#skills">Skills</a>  
+              <a href="#services">Services</a>
+              <a href="#contact">contact</a>
              <ul>
-               <li><a href ="#home">Home</a></li>
-               <li><a href="#skills">Skills</a></li>
-               <li><a href="#services">Services</a></li>
-                
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
               </ul>
             </nav>
-        
-      </section>
-   
+          </section>
+    <!-----------------Home section-------------------------->
         <section id="home" class="home" style="display: flex;">
-            <div id="home-img">
+               <div class="home-content">
+               <h4>Hi, am</h4>
+               <h1>Juma <span>Emmanuel</span></h1>
+               <h3>A software Engineer.</h3>
+              </div>
+              <div id="home-img">
                 <img src="me.png">
               </div>
-            <div class="about-text">
-            <h4>Hi, am</h4>
-            <h1>Juma <span>Emmanuel</span></h1>
-            <h3>A software developer.</h3>
-            <p>I am a full-stack developer with vast knowledge in various programming languages including
+        </section>
+         <!-----------------About section-------------------------->
+    <section id="abt" class="about" style="display:flex;">
+      <div class="about-img">
+         <img src="software_dev.jpg">
+       </div>
+         <div class="about-text">
+             <h2>About Me</h2>
+             <h5>Designer <span>& Developer</span></h5>
+             I am a full-stack developer with vast knowledge in various programming languages including
 
                 Java,Python,Javascript,C++,Dart,solidity among more others.I am able to develop cross-platform software applications 
                 that are user friendly and efficient.I have a great passion in the IT field 
-
                 and am cognisant with the new and emerging technology trends in the field of software engineering.</p>
-          </div>
-          
-             
-            
-        </section>
-        
+                  <button  class="Lets-talk"onclick="toggleVisibility(['header','lets-talk','footer'], true);">Let's Talk</button>
+         </div>
+      </div>
+ </section>
   
  <!------------------------skills------------------->
   <section id="skills" class="skills" >
