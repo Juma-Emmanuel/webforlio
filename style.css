@@ -125,6 +125,24 @@ span{
     font-weight: 700;
     color: white;
   }
+  .cv-btn{
+display: inline-block;
+padding: 1rem 2.8rem;
+background: #f9004d;
+border-radius: 4rem;
+box-shadow: 0 0 1rem #f9004d;
+font-size: 1.6rem; 
+color: #fff;
+letter-spacing: .1rem;
+font-weight: 600;
+
+  }
+  .cv-btn:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+    box-shadow: none;
+  }
   #home-img{ 
     width: auto;
     margin: 13vh 30vh 15vh;
@@ -136,47 +154,48 @@ span{
     height: 52vh;
    
   }
-  
-  
-.content{
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
+   /*-----------------------about---------------------------*/
+  /*------------------------------------------------------*/
+ .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+ }
+ .about-content{
+text-align: left;
+width: 95vh;
+ }
+
+.about-img{
+width: 28vh;
+margin: 9vh 4vh 9vh ;
 }
-.about-text{
-    width: 550px;
-    margin-left: 25vh;
-   }
-.about-text h1{
+.about-img img{
+height: 52vh;
+
+border-radius: 23px;
+}
+
+.about-content h2{
     color:white;
-    margin: 22px 50px 20px;
     font-size: 50px;
+    margin-bottom: 20px;
+
 }
-.about-text h3{
+.about-content h5{
     color: white;
     font-size: 25px;
-    margin:22px 80px 50px;
+    margin-bottom: 25px;
     
 }
-.about-text h4{
+.about-content p{
     color: #fcfc;
     letter-spacing: 2px;
     font-size: 20px;
-    margin:125px 80px 20px;
+    margin-bottom: 45px;
+   
    }
-   .about-text p{
-    color: #fcfc;
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-     margin-bottom: 45px;
-     }
-
-   
- 
-   /*-----------------------about---------------------------*/ 
-   
     button{
         background-color: #f9004d;
         color: white;
@@ -186,8 +205,7 @@ span{
         padding: 13px 30px;
         border-radius: 30px;
         transition: .4s;
-       
-    }
+        }
     button:hover{
         background-color: transparent;
         border: 2px solid #f9004d;
@@ -196,7 +214,6 @@ span{
     /*------------------------skills-------------------*/
     .skills{
         width: 100%;
-        
         background: #101010;
         display: flex;
         align-items: center;
@@ -217,7 +234,17 @@ span{
         font-weight: bold;
         margin-bottom: 25px;
     }
-    
+    .box1 .card1{
+        transition: .5s ease;
+        border-radius: 2rem;
+       
+    }
+    .box1 .card1:hover{
+        border: .2rem solid #f9004d;
+        border-color: #f9004d;
+        transform: scale(1.02);
+
+    }
     .box1{
         display: flex;
         justify-content: center;
@@ -235,13 +262,7 @@ span{
         overflow: hidden;
         text-align: center;
     }
-    #float{
-        position: fixed;
-        transform: translate(-50%);
-        background-color: #fff;
-        box-shadow: 0 2px 5px rgba(154, 55, 55, 0.2);
-        transform: top 0.3s ease-in-out;
-    }
+    
     .card1 h5{
         color: #f9004d;
         font-size: 23px;
@@ -270,6 +291,18 @@ span{
         margin: 30px auto;
         text-align: center;
     }
+    .box2 .card2{
+        transition: .5s ease;
+        border-radius: 2rem;
+       
+    }
+    .box2 .card2:hover{
+        border: .2rem solid #f9004d;
+        border-color: #f9004d;
+        transform: scale(1.02);
+
+    }
+   
     .box2{
         display: flex;
         justify-content: center;
