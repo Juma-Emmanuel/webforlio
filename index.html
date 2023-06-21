@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
      crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>  
 <body>   
@@ -21,7 +22,8 @@
               <a href ="#abt">About</a> 
               <a href="#skills">Skills</a>  
               <a href="#services">Services</a>
-              <a href="#contact">contact</a>
+              <a href="#project">Projects</a>
+              <a href="#contact1">contact</a>
              
             </nav>
           </section>
@@ -51,7 +53,7 @@
                 are user friendly and efficient.I have a great passion in the IT field
                 and am cognisant with the new and emerging technology trends in the field
                  of software engineering.</p>
-                  <button  class="Lets-talk"onclick="toggleVisibility(['header','lets-talk','footer'], true);">Let's Talk</button>
+                  <button  class="l-btn"onclick="toggleVisibility(['header','lets-talk','footer'], true);">Let's Talk</button>
          </div>
       </div>
  </section>
@@ -84,9 +86,7 @@
             </p>
             </div>
           </div>
-       
-
-       
+             
           <div class="card1">
             <h5>Team Leadership</h5>
             <div class="pra1">
@@ -96,11 +96,7 @@
             </p>
             </div>
           </div>
-       
-       
-
-       
-          <div class="card1">
+            <div class="card1">
             <h5>Data analysis:</h5>
             <div class="pra1">
              <p> Am experienced in analyzing and interpreting data to make informed decisions. 
@@ -158,6 +154,80 @@
         </div>
     </section>
 </div>
+  <!-----------------projects-------------------------->
+  <section id="project" class="project">
+    <div class="title">
+      <h2 class="heading">Latest <span>Projects </span></h2>
+    </div>
+    
+    <div class="project-container">
+
+      <div class="project-box">
+        
+          <img src="wdproject2.jpeg" alt="">
+            
+        <div class="project-layer">
+          <h4>Web Development</h4>
+          <p>A web based application for monitoring stationery sales</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="project-box">
+       
+          <img src="mdproject.jpeg" alt="">
+               
+        <div class="project-layer">
+          <h4>Mobile app Development</h4>
+          <p>A web based application for monitoring stationery sales</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      
+      <div class="project-box">
+        
+          <img src="AndProject.jpg" alt=""> 
+              
+        <div class="project-layer">
+          <h4>Android Development</h4>
+          <p>A web based application for monitoring stationery sales</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        
+          <img src="fdproject.jpeg" alt="">
+              
+        <div class="project-layer">
+          <h4>Flutter app Development</h4>
+          <p>A web based application for monitoring stationery sales</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+     
+      <div class="project-box">        
+          <img src="ddproject.jpeg" alt="">               
+        <div class="project-layer">
+          <h4>Desktop Development</h4>
+          <p>A web based application for monitoring stationery sales</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="project-box">
+              <img src="ddproject2.jpeg" alt="">
+              
+        <div class="project-layer">
+          <h4>Desktop Development</h4>
+          <p>A web based application for monitoring stationery sales</p>
+         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+        </div>
+      </div>
+    </div>
+
+  </section>
     <!----------------------- hire Me--------------------->
        <div id="hire-me"  class="hire-me" style="display: none;">
         <h5>Hire Me</h5>
@@ -167,7 +237,28 @@
   
        </div>
       </div>
+<!----------------------- contact--------------------->
+<section class="contact1 " id="contact1">
+  <div class="title">
+    <h2 class="heading">Contact<span> Me!</span></h2>
+  </div>
 
+<form action="#">
+<div class="input-box">
+  <input type="text" placeholder="Full Name">
+  <input type="email" placeholder="Email address">
+</div>
+
+<div class="input-box">
+  <input type="number" placeholder="Mobile number">
+  <input type="text" placeholder="Email subject">
+</div>
+
+<textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
+<input class="l-btn" type="submit" value="send message" class="btn">
+</form> 
+
+</section>
 
       <div id="lets-talk"  class="form1" style="display: none;">
 
@@ -191,19 +282,33 @@
               <section id="foot">
                 
                 <P>Reach<span> Out</span></P>
-                <div class="social">
+                <div class="socials">
+
                     <a href="mailto:jumaemmanuel462@yahoo.com"><i class="fa-regular fa-envelope"></i></a>
                    
                     <a href="#"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/juma-emmanuel-61716a271"><i class="fa-brands fa-linkedin"></i></a>
                     
                     <a href="https://www.twitter.com/Juma_Emmanuelle?t=gC1AEYsPfDDbroKZFT8tAg&s=09"><i class="fa-brands fa-twitter"></i></a>
-                    <h2 class="td">Juma<span>Emmanuel</span></h2 >
-                    <h5 class="end" >&COPY;2023</h5>
+                   
+                    
                 </div>
+     
               </section>
+<footer class="footer">
+  <div class="footer-text">
+    <h2 >Juma<span>Emmanuel</span></h2 >
+      <h5  >&COPY;2023 | All Rights Reserved</h5>
+      
+  </div>
+  <div class="footer-iconTop">
+    <a href="#home"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
 
-              <footer id="footer" style="display: none;" >
+  </div>
+
+
+</footer>
+              <footer1 id="footer" style="display: none;" >
                 
                 <P>Reach<span> Out</span></P>
                 <div class="socials">
@@ -212,9 +317,12 @@
                     <a href="https://www.linkedin.com/in/juma-emmanuel-61716a271"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.twitter.com/Juma_Emmanuelle?t=gC1AEYsPfDDbroKZFT8tAg&s=09"><i class="fa-brands fa-twitter"></i></a>
                     <h2 class="ft">Juma<span>Emmanuel</span></h2 >
-                    <h5 class="ftend" >&COPY;2023</h5>
+                    <h5 class="ftend" >&COPY;2023 | All Rights Reserved</h5>
                 </div>
-              </footer>
-              <script src="index.js"></script>
+              </footer1>
+              <script src="https://unpkg.com/scrollreveal"></script> 
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+              <script src="script.js"></script>
 </body>
 </html>
