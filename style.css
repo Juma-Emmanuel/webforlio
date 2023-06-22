@@ -613,6 +613,13 @@ color:#fff;
     .project-container {
         grid-template-columns: 1fr;
     }
+    .project-container .project-box{
+        
+        width: 70vw;
+        }
+        .project img{
+            width: 70vw;
+        }
 }
 
 @media(max-width:450px) {
