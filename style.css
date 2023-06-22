@@ -355,8 +355,7 @@ width: 60vh;
 }
 
 .project-box img{
-    width: 60vh;
-    height: 33vh;
+  
     transition: .5s  ease;
 }
 .project-box:hover img{
@@ -594,6 +593,7 @@ color:#fff;
     .services h2 {
         margin-bottom: 3rem;
     }
+    
     .project h2 {
         margin-bottom: 3rem;
     }
