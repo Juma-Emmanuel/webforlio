@@ -595,10 +595,10 @@ color:#fff;
     }
     .project-container .project-box{
         
-        width: 70vw;
+        width: 100vw;
         }
         .project img{
-            width: 70vw;
+            width: 100vw;
         }
    
     .project h2 {
@@ -615,10 +615,10 @@ color:#fff;
     }
     .project-container .project-box{
         
-        width: 95vw;
+        width: 90vw;
         }
         .project img{
-            width: 95vw;
+            width: 90vw;
         }
 }
 
