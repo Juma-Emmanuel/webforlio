@@ -806,14 +806,14 @@ h5.ftend{
         font-size: 5rem;
     }
     .home-img img {
-        height: 52vh;
+        width: 70vw;
         margin-top: 4rem;
     }
     .about {
         flex-direction: column-reverse;
     }
     .about img {
-        height: 52vh;
+        width: 70vw;
     }
     .skills h2 {
         margin-bottom: 3rem;
@@ -846,10 +846,10 @@ h5.ftend{
 
 @media(max-width:365px) {
     .home-img img {
-       height: 52vh;
+        width: 90vw;
     }
     .about-img img {
-       height: 52vh;
+        width: 90vw;
     }
     .footer {
         flex-direction: column-reverse;
