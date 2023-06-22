@@ -13,6 +13,7 @@ if($conn){
     echo "message sent succesfully...";
   }else{
     die(mysqli_error($con));
+    echo "message not succesfully...";
       }
     }else{
       die(mysqli_error($conn));

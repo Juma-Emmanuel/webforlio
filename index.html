@@ -14,7 +14,7 @@
 <body>   
   
      <!---------------------toppage section ---------------------->
-     <section id="toppage" class="top">
+     <header  class="header">
       <h2 class="logo">Juma<span> Emmanuel</span></h2> 
       <i class="fa-solid fa-bars" id="menu-icon"></i>
             <nav class="navbar">  
@@ -26,16 +26,16 @@
               <a href="#contact1">contact</a>
              
             </nav>
-          </section>
+          </header>
     <!-----------------Home section-------------------------->
-        <section id="home" class="home" style="display: flex;">
+        <section id="home" class="home" >
                <div class="home-content">
                <h4>Hi, am</h4>
                <h1>Juma <span>Emmanuel</span></h1>
                <h3>A software Engineer.</h3>
                <a href="#cv" class="cv-btn">Download CV</a>
               </div>
-              <div id="home-img">
+              <div class="home-img">
                 <img src="me.png">
               </div>
         </section>
@@ -45,7 +45,7 @@
          <img src="juma.jpg">
        </div>
          <div class="about-content">
-             <h2>About Me</h2>
+          <h2 class="heading"> About <span>Me</span></h2>
              <h5>Designer <span>& Developer</span></h5>
             <p> I am a full-stack developer with vast knowledge in various programming 
                 languages including Java,Python,Javascript,C++,Dart,solidity among more
@@ -54,16 +54,15 @@
                 and am cognisant with the new and emerging technology trends in the field
                  of software engineering.</p>
                   <button  class="l-btn"onclick="toggleVisibility(['header','lets-talk','footer'], true);">Let's Talk</button>
-         </div>
+         
       </div>
  </section>
   
  <!------------------------skills------------------->
   <section id="skills" class="skills" >
-        <div class="skills-title">
-         <h3>Skills</h3>
-         </div>
-          
+    <div class="title">
+      <h2 class="heading">My<span> Skills</span></h2>
+    </div>       
         <div class="box1">
          <div  class="card1">
             <h5 id="content">MySQL</h5>
@@ -156,10 +155,7 @@
 </div>
   <!-----------------projects-------------------------->
   <section id="project" class="project">
-    <div class="title">
-      <h2 class="heading">Latest <span>Projects </span></h2>
-    </div>
-    
+          <h2 class="heading">Current <span>Projects </span></h2>       
     <div class="project-container">
 
       <div class="project-box">
@@ -243,41 +239,24 @@
     <h2 class="heading">Contact<span> Me!</span></h2>
   </div>
 
-<form action="#">
-<div class="input-box">
-  <input type="text" placeholder="Full Name">
-  <input type="email" placeholder="Email address">
-</div>
-
-<div class="input-box">
-  <input type="number" placeholder="Mobile number">
-  <input type="text" placeholder="Email subject">
-</div>
-
-<textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
-<input class="l-btn" type="submit" value="send message" class="btn">
-</form> 
+  <form action="userinfo.php" method="post">
+    <div class="input-box">
+      <input type="text" id="name" name="name" placeholder="Full Name">
+      <input type="email" id = "email" name="email" placeholder="Email address">
+    </div>
+    
+    <div class="input-box">
+      
+    </div>
+    
+    <textarea  id="message" name="message" cols="30" rows="10" placeholder="your message"></textarea>
+    <input  type="submit"  value="send message" class="btn">
+    
+    </form>  
 
 </section>
 
-      <div id="lets-talk"  class="form1" style="display: none;">
-
-        <form id="letstalk" action="userinfo.php" method="post"> 
-          <h5 id="lets">Lets talk</h5>
-        <div class="name"><label class="name"for="name">Name:</label>
-          <input type="text" id="name" class="txtfield" name="name" required>
-        </div>
-        
-                <div class="email"><label for="email" >Email:</label>
-        <input type="text" id="email" class="txtfield" name="email" required>
-        </div>
-        <div class="txtarea">
-        <label for ="message" class="message">Message:</label>
-        <textarea id ="message" name="message" class="txt"rows="1" required></textarea>
-        </div>
-        <button type="submit" id="send">Send</button>
-        </form>
-      </div>
+      
      <!----------------------- footer-------------------->
               <section id="foot">
                 

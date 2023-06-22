@@ -10,7 +10,7 @@ menuIcon.onclick = () => {
 
 /*---------------------------------------------------------*/
 let sections = document.querySelectorAll('section');
-let navlinks = document.querySelectorAll('top nav a');
+let navlinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () =>{
   sections.forEach(sec =>{
@@ -22,13 +22,13 @@ window.onscroll = () =>{
     if(top >= offset && top<offset+height){
       navlinks.forEach(links =>{
         links.classList.remove('active');
-        document.querySelector('top nav a[href*=' + id + ']').classList.add('active');
+        document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
       });
     };
   });
 
   /*================sticky navbar===============*/
-  let header = document.querySelector('top');
+  let header = document.querySelector('header');
   header.classList.toggle('sticky', window.scrollY > 100);
 
   /*================ remove togle icon  and navbar when click navbar link (scroll)===============*/
@@ -43,9 +43,9 @@ ScrollReveal({
   delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .top', { orgin: 'top' });
-ScrollReveal().reveal('.home-img, .box2,  .project-box, .contact1 form', { orgin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .box1, .about-img', { orgin: 'left' });
+ScrollReveal().reveal('.home-content, .heading', { orgin: 'top' });
+ScrollReveal().reveal('.home-img, .box2, .box1, .project-box, .contact1 form', { orgin: 'bottom' });
+ScrollReveal().reveal('.home-content h1,  .about-img', { orgin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { orgin: 'right' });
 
 /*=====<i class="fa-regular fa-x"></i>===========typed js===============*/
