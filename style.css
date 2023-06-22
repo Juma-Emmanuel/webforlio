@@ -145,17 +145,12 @@ font-weight: 600;
     cursor: pointer;
     box-shadow: none;
   }
-  .home-img{ 
-    width: auto;
-    margin: 13vh 30vh 15vh;
-     border: 3px solid #f9004d;
-   border-radius: 27px;
-  }
+ 
   .home-img img {
     border-radius: 20px;
-    height: 52vh;
+    width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
- clip-hexagon(50% 0%, 80% 25%, 100% 75%, 50% 100%, 0% 75%,20% 25% );
+    clip-hexagon:(50% 0%, 80% 25%, 100% 75%, 50% 100%, 0% 75%,20% 25% );
   border: 5px solid black;
      }
      @keyframes floatImage {
@@ -180,7 +175,7 @@ font-weight: 600;
  
 
 .about-img img{
-height: 52vh;
+    width: 25vw;
 
 border-radius: 23px;
 }
