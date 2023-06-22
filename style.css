@@ -351,7 +351,7 @@ border-radius: 2rem;
 box-shadow: 0 0 1rem #f9004d;
 overflow: hidden;
 display: flex;
-width: 60vh;
+
 }
 
 .project-box img{
@@ -593,7 +593,14 @@ color:#fff;
     .services h2 {
         margin-bottom: 3rem;
     }
-    
+    .project-container .project-box{
+        
+        width: 70vw;
+        }
+        .project img{
+            width: 70vw;
+        }
+   
     .project h2 {
         margin-bottom: 3rem;
     }
