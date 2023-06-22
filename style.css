@@ -743,12 +743,12 @@ h5.ftend{
     color:#f9004d ;
 }
 /*breakpoints*/
-@media (max-width:1200px){
+@media(max-width:1200px) {
     html{
         font-size: 55%;
     }
 }
-@media (max-width:991px){
+@media(max-width:991px) {
     .header{
         padding: 2rem 3%;
     }
