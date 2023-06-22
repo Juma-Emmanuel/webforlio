@@ -771,37 +771,6 @@ h5.ftend{
         min-height: auto;
     }
 }
-
-@media(max-width:1200px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media(max-width:991px) {
-    .header {
-        padding: 2rem 3%;
-    }
-    section {
-        padding: 10rem 3% 2rem;
-    }
-    .footer {
-        padding: 2rem 3%;
-    }
-    .skills {
-        padding-bottom: 7rem;
-    }
-    .services {
-        padding-bottom: 7rem;
-    }
-    .project {
-        padding-bottom: 7rem;
-    }
-    .contact1 {
-        min-height: auto;
-    }
-}
-
 @media(max-width:768px) {
     #menu-icon {
         display: block;
