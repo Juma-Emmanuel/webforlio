@@ -779,7 +779,7 @@ h5.ftend{
 }
 
 @media(max-width:991px) {
-    .top {
+    .header {
         padding: 2rem 3%;
     }
     section {
