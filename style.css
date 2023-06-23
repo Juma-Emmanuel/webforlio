@@ -407,6 +407,15 @@ transform: scale(1.1);
 .contact{
     background: #101010;
 }
+.alert{
+    width: 100%;
+    background: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+}
 .contact h2{
     margin-bottom: 3rem;
 }

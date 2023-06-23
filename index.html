@@ -235,7 +235,8 @@
     <h2 class="heading">Let's<span> talk!</span></h2>
   </div>
 
-  <form action="/firebaseSubmitForm" method="POST">
+  <form action="" id ="contactForm" >
+    <div class="alert">Your message sent</div>
     <div class="input-box">
       <input type="text" id="name" name="name" placeholder="Full Name">
       <input type="email" id = "email" name="email" placeholder="Email address">
@@ -276,10 +277,10 @@
         <a href="#home"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>    
       </div>
 </footer>
-<script src="form.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
               <script src="https://unpkg.com/scrollreveal"></script> 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
+    <script src="mail.js"></script>
               <script src="script.js"></script>
 </body>
 </html>
