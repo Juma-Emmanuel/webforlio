@@ -235,7 +235,7 @@
     <h2 class="heading">Let's<span> talk!</span></h2>
   </div>
 
-  <form action="/firebaseSubmitform">
+  <form action="/firebaseSubmitForm" method="POST">
     <div class="input-box">
       <input type="text" id="name" name="name" placeholder="Full Name">
       <input type="email" id = "email" name="email" placeholder="Email address">
@@ -246,7 +246,7 @@
     </div>
     
     <textarea  id="message" name="message" cols="30" rows="10" placeholder="your message"></textarea>
-    <input  type="submit"  value="send message" class="l-btn">
+    <input  type="submit"  value="send message" name="submit" class="l-btn">
     
     </form>  
 
@@ -276,7 +276,7 @@
         <a href="#home"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>    
       </div>
 </footer>
-              
+<script src="form.js"></script>
               <script src="https://unpkg.com/scrollreveal"></script> 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
