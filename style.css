@@ -415,6 +415,7 @@ transform: scale(1.1);
     text-align: center;
     font-size: 18px;
     font-weight: 900;
+    display: none;
 }
 .contact h2{
     margin-bottom: 3rem;

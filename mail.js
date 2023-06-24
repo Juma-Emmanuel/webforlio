@@ -30,7 +30,7 @@ function submitForm(e) {
   //   remove the alert
   setTimeout(() => {
     document.querySelector(".alert").style.display = "none";
-  }, 3000);
+  }, 1000);
 
   //   reset the form
   document.getElementById("contactForm").reset();
