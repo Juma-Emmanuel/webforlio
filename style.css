@@ -992,6 +992,12 @@ color:#fff;
     padding: none;
     width: 70vw;
 }
+.container {
+   
+    
+    overflow: hidden;
+   
+}
 .about-content{
     height: 47vh;    
 margin-top: 1px;
