@@ -21,7 +21,8 @@
     }
 body{
     background-color: black;
-   /* width: 100%;*/
+    --header-load-time: 0.8s;
+    --nav-link-load-time:1s;
 }
 section {
     min-height: 100vh;
@@ -41,6 +42,16 @@ section {
     align-items: center;
     z-index: 100;
     background: #191919;
+    animation: header-load var( --header-load-time) ease-in;
+}
+@keyframes header-load{
+    0% {
+        transform: translateY(-100%);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
 }
 .header.sticky{
     border-bottom: 1rem solid #191919;
@@ -59,9 +70,26 @@ span{
         color: white;
         display: none;
     }
+    .navbar{
+        animation: nav-link-load;
+        animation-duration: var(--nav-link-load-time);
+        animation-timing-function: ease-in;
+        animation-delay: 300ms;
+        animation-fill-mode: forwards;
+        transform: scale(0);
+    }
+    @keyframes nav-link-load{
+        0% {
+            transform: scale(0);
+        }
+        90%{
+        transform: scale(1.1);
+        }
     
-    
-
+        100% {
+            transform: scale(1);
+        }
+    }
 .navbar a{
     color:white;
     text-decoration: none;
@@ -106,8 +134,76 @@ span{
   .home-content{
     font-size: 3.2rem;
     font-weight: 700;
-    margin-left: 21vh;
+    overflow: hidden;
+    z-index: 5;
   }
+  .container {
+   
+    width: auto; 
+    height: auto;   
+    overflow: hidden;
+    opacity: 0.5;
+}
+  
+  .ball1,
+  .ball2,
+  .ball3{
+    position: absolute;    
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    background-color: #f9004d;   
+    animation-delay: 0s;
+    
+  }
+  .ball1{
+    animation-name: move1;
+    width: 400px;
+    height: 400px;
+    top: 40%;
+    left: -12%;
+  }  
+  .ball2{    
+    animation-name: move2;   
+    width: 140px;
+    height: 140px;   
+    top: 10%;
+    left: 35%;   
+  }
+  .ball3{    
+    animation-name: move3;   
+    width: 140px;
+    height: 140px;   
+    top: 9%;
+    left: 11%;   
+  }
+  
+  @keyframes move1 {
+    
+    50% {
+      left: -13%;
+      top: 41%;
+    }
+    
+  }
+  @keyframes move2 {
+    
+    50% {
+      left: 33%;
+      top: 15%;
+    }
+    
+  }
+  @keyframes move3 {
+    
+    50% {
+      left: 8%;
+      top: 12%;
+    }
+    
+  }
+
   .home-content h4{
     font-size: 20px;
     font-weight: 700;
@@ -118,12 +214,23 @@ span{
     font-weight: 700;
     line-height: 1.3;
     color: white;
+    z-index: 5;
   }
   .home-content h3{
     font-size: 25px;
     font-weight: 700;
     color: white;
   }
+  .home-content p{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+
+ color: #fcf;
+}
+.multiText{
+    text-transform: capitalize;
+  }
+
   .home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
 }
