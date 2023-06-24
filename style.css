@@ -992,12 +992,7 @@ color:#fff;
     padding: none;
     width: 70vw;
 }
-.container {
-   
-    
-width: 80%;
-   
-}
+
 .about-content{
     height: 47vh;    
 margin-top: 1px;
@@ -1031,10 +1026,10 @@ margin-top: 1px;
 
   .ball1{
   
-    width: 150px;
-    height: 150px;        
+    width: 200px;
+    height: 200px;        
     top: 28%;
-    left: 70%;        
+    left: 60%;        
   }
   .ball2{
     animation-name: move2;       
@@ -1052,7 +1047,7 @@ margin-top: 1px;
   
   @keyframes move1 {        
     50% {
-        left: 71%;         
+        left: 61%;         
         top: 29%;
     }        
   }
