@@ -1029,7 +1029,7 @@ margin-top: 1px;
     width: 150px;
     height: 150px;        
     top: 28%;
-    left: 60%;        
+    left: 56%;        
   }
   .ball2{
     animation-name: move2;       
@@ -1047,7 +1047,7 @@ margin-top: 1px;
   
   @keyframes move1 {        
     50% {
-        left: 61%;         
+        left: 57%;         
         top: 29%;
     }        
   }
