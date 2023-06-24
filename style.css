@@ -35,6 +35,7 @@ section {
     position: fixed;
     top: 0;
     left: 0;
+    height: 32px;
     width: 100%;
     padding: 2rem 9%;
     display: flex;
@@ -275,25 +276,38 @@ font-weight: 600;
   /*------------------------------------------------------*/
  .about{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+ 
     gap: 2rem;
     background: #101010;
+ }
+ .topp{
+    display: flex;
+    flex-direction: row;
+  }
+  .about-img{
+    padding: 5%;
  }
  
 
 .about-img img{
-    width: 25vw;
-
+    width: 19vw;
+    height: 60vh;
 border-radius: 23px;
+animation: floatImage 4s ease-in-out infinite;
 }
 .heading {
     text-align: center;
     font-size: 4.5rem;
     color: white;
 }
-
-
+.about-content{
+    height: 49vh;
+      
+    margin-top: 13%;
+ }
 .about-content h2{
     color:white;
     font-size: 50px;
@@ -328,6 +342,72 @@ border-radius: 23px;
         background-color: transparent;
         border: 2px solid #f9004d;
         cursor: pointer;
+    }
+    .sizedbox{
+        height: 100vh;
+        
+    }
+    
+     .bubbles{
+        width: 100%;
+        display: flex;
+        align-self: flex-end;
+        align-items: center;
+        justify-content: space-around;
+        }
+       
+   
+    .bubbles img{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        
+        animation: bubble 7s linear infinite;
+      
+    }     
+       
+    @keyframes bubble{
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }
+        50%{
+           
+            opacity: 1;
+        }
+        70%{
+           
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(-80vh);
+            opacity: 0;
+        }
+    }
+    
+    .bubbles img:nth-child(1){
+        animation-delay: 2s;
+    }
+    .bubbles img:nth-child(2){
+        animation-delay: 1s;
+    }
+    .bubbles img:nth-child(3){
+        animation-delay: 3s;
+    }
+    .bubbles img:nth-child(4){
+        animation-delay: 4.5s;
+    }
+    .bubbles img:nth-child(5){
+        animation-delay: 3s;
+    }
+    .bubbles img:nth-child(6){
+        animation-delay: 6s;
+    }
+    .bubbles img:nth-child(7){
+        animation-delay:7s ;
+    }
+    .bubbles img:nth-child(8){
+        animation-delay: 5.3s;
     }
     /*------------------------skills-------------------*/
     .skills{
@@ -442,6 +522,42 @@ border-radius: 23px;
 .project{
     background: #191919;
 } 
+.toast {
+    background-color: greenyellow;
+    color: rgb(42, 42, 182);
+    font-size: 3rem;
+    padding: 10px;
+    border-radius: 4px;
+    height: 10vh;
+    width: 20vh;
+    top: 27%;
+    left: 35%;
+    position: fixed;
+    
+  }
+  
+  .t-btn{
+  background-color: #0ef;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  
+  border-radius: 50%;
+  display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 5rem;
+   height: 5rem;
+ 
+ 
+  }
+  .t-btn:hover {
+    box-shadow: 0 0 1rem #0ef;
+    transform: scale(1.3);
+    transition: .3s;
+   
+}
  .project h2{
     margin-bottom: 4rem;
     color: white;
@@ -495,7 +611,7 @@ transform: scale(1.1);
 .project-layer p{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
-    color: #fcf;
+    color: #fff;
 }
 
 .project-layer a {
@@ -507,12 +623,14 @@ transform: scale(1.1);
    background: white;
    border-radius: 50%;
 }
+.t-btn i,
 .project-layer a i{
     font-size: 2rem;
     color: #101010;
 }
 .contact{
     background: #101010;
+    overflow: hidden;
 }
 .alert{
     width: 100%;
@@ -554,11 +672,24 @@ transform: scale(1.1);
 .contact form textarea{
     resize: none
 }
-.contact form .l-btn{
-    margin-top: 2rem;
-    cursor: pointer;
-}
-
+.f-btn{
+    background-color: rgb(0, 255, 106);
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;    
+    border-radius: 20px;
+    display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 6rem;
+     height: 3rem;   
+    }
+    .f-btn:hover {
+      box-shadow: 0 0 1rem rgb(0, 255, 106);
+     
+      transition: .3s;
+      }
+      
 .socials{
     display: flex;
     justify-content: space-between;
@@ -612,7 +743,7 @@ transform: scale(1.1);
 color: #fff;
 }
 .footer-text h5{
-    color: #fcf;
+    color: #fff;
     font-size: 14px;
 }
  .footer-iconTop a{
@@ -636,12 +767,56 @@ color:#fff;
     html{
         font-size: 55%;
     }
+      /*------balls animation start -------*/
+      .ball1{
+      
+        width: 300px;
+        height: 300px;        
+                top: 41%;
+                left: -18%;
+      }
+      .ball2{
+              
+        width: 100px;
+        height: 100px;   
+        top: 12%;
+        left: 35%;             
+      }
+      .ball3{
+              
+        width: 100px;
+        height: 100px;   
+                   
+      }
+      
+      @keyframes move1 {        
+        50% {
+            top: 42%;
+                left: -19%;
+      }
+        }        
+      
+      @keyframes move2 {        
+        50% {
+            top: 15%;
+            left: 33%;
+            
+        }        
+      }
+    
+      
+      /*------balls animation end -------*/
+    
 }
 @media(max-width:991px) {
     .header{
         padding: 2rem 3%;
         width: 100%;
     }
+    .navbar{
+        
+        animation-duration: 500ms;
+      }
     section{
         padding: 10rem 3% 2rem;
     }
@@ -672,10 +847,11 @@ color:#fff;
         left: 0;
         width: 100%;
         padding: 1rem 3%;
-        background: var(--bg-color);
+        background: #191919;
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
+        animation-duration: 500ms;
     }
     .navbar.active {
         display: block;
@@ -688,6 +864,51 @@ color:#fff;
     .home {
         flex-direction: column;
     }
+
+ /*------balls animation start -------*/
+ .ball1{
+    animation-name: move1;   
+    width: 200px;
+    height: 200px;        
+    top: 28%;
+    left: 70%;        
+  }
+  .ball2{
+    animation-name: move2;       
+    width: 80px;
+    height: 80px;        
+    top: 11%;
+    left: 35%;        
+  }
+  .ball3{
+    animation-name: move3; 
+    width: 80px;
+    height: 80px; 
+    top: 12%;  
+    left: 68%;     
+           
+  }
+  
+  @keyframes move1 {        
+    50% {
+        left: 71%;         
+        top: 29%;
+    }        
+  }
+  @keyframes move2 {        
+    50% {
+        left: 33%; 
+      top: 8%;
+    }        
+  }
+  @keyframes move3 {        
+    50% {
+        left: 65%; 
+      top: 8%;
+    }        
+  }
+  /*------balls animation end -------*/
+
     .home-content h3 {
         font-size: 2.6rem;
     }
@@ -699,11 +920,42 @@ color:#fff;
         margin-top: 4rem;
     }
     .about {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        height: 109vh;
     }
     .about img {
         width: 70vw;
     }
+    .about-content{
+        height: 47vh;    
+   margin-top: 1px;
+    }
+    .topp{
+        flex-direction: column-reverse;
+        margin-top: -82px;
+    }
+    .sizedbox{
+        height: 1px;
+        margin: 0;
+    }
+    @keyframes bubble{
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }
+        50%{
+           
+            opacity: 1;
+        }
+        70%{
+           
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(-100vh);
+            opacity: 0;
+        }
+    }   
     .skills h2 {
         margin-bottom: 3rem;
     }
@@ -727,6 +979,91 @@ color:#fff;
 }
 
 @media(max-width:617px) {
+
+ /*------balls animation start -------*/
+ .navbar{
+    animation-duration: 500ms;
+  }
+  .about {
+    flex-direction: column;
+    height: 109vh;
+}
+.about-img{
+    padding: none;
+    width: 70vw;
+}
+.about-content{
+    height: 47vh;    
+margin-top: 1px;
+}
+.topp{
+    flex-direction: column-reverse;
+    margin-top: -82px;
+}
+.sizedbox{
+    height: 1px;
+    margin: 0;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+       
+        opacity: 1;
+    }
+    70%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+  .ball1{
+  
+    width: 200px;
+    height: 200px;        
+    top: 28%;
+    left: 70%;        
+  }
+  .ball2{
+    animation-name: move2;       
+    width: 80px;
+    height: 80px;        
+    top: 11%;
+    left: 35%;        
+  }
+  .ball3{
+    animation-name: move3; 
+    width: 80px;
+    height: 80px;        
+          
+  }
+  
+  @keyframes move1 {        
+    50% {
+        left: 71%;         
+        top: 29%;
+    }        
+  }
+  @keyframes move2 {        
+    50% {
+        left: 33%; 
+      top: 8%;
+    }        
+  }
+  @keyframes move3 {        
+    50% {
+        left: 65%; 
+      top: 8%;
+    }        
+  }
+  /*------balls animation end -------*/
+
     .project-container {
         grid-template-columns: 1fr;
     }

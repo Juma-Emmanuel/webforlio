@@ -2,7 +2,7 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
+    menuIcon.classList.toggle('fa-x');
     navbar.classList.toggle('active');
 }
 
@@ -31,9 +31,26 @@ window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 
     /*================ remove togle icon  and navbar when click navbar link (scroll)===============*/
-    menuIcon.classList.remove('bx-x');
+    menuIcon.classList.remove('fa-x');
     navbar.classList.remove('active');
 };
+
+function showToast(ContainerID, message) {
+    var toastContainer = document.getElementById(ContainerID);
+  
+    // Create a new toast element
+    var toast = document.createElement('div');
+    toast.classList.add('toast');
+    toast.textContent = message;
+  
+    // Add the toast to the container
+    toastContainer.appendChild(toast);
+  
+    // Remove the toast after a certain duration
+    setTimeout(function() {
+      toastContainer.removeChild(toast);
+    }, 1000); // Toast will be removed after 3 seconds (3000 milliseconds)
+  }
 
 
 /*================Scroll reveal===============*/
