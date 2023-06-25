@@ -431,12 +431,12 @@ animation: floatImage 4s ease-in-out infinite;
         width: 50px;
         height: 50px;
         
-        animation: c-bubble 10s linear infinite; 
+        animation: c-bubble 15s linear infinite; 
     }
     @keyframes c-bubble{
         0%{
             transform: translateX(0);
-            opacity: 0;
+            opacity: 0.6;
         }
         50%{
            
