@@ -1011,8 +1011,9 @@ color:#fff;
         height: 100%;
     }
     .form-container{
+        position: relative;
         margin-top: 0;
-        left: 2%;
+        left: 1%;
     }
     .c-bubbles{
         right: -44%;
@@ -1140,8 +1141,10 @@ margin-top: 1px;
             height: 100%;
         }
         .form-container{
+       left: 1%;
+            position: relative;
             margin-top: 0;
-            left: 7%;
+            
         }
         .c-bubbles{
             right: -44%;
