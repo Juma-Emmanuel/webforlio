@@ -448,7 +448,7 @@ animation: floatImage 4s ease-in-out infinite;
         }
         100%{
             transform: translateX(-400vh);
-            opacity: 0;
+            opacity: 1;
         }
     }
     /*------------------------skills-------------------*/
@@ -1007,6 +1007,16 @@ color:#fff;
             opacity: 0;
         }
     }   
+    .contact{
+        height: 100%;
+    }
+    .form-container{
+        margin-top: 0;
+        left: 7%;
+    }
+    .c-bubbles{
+        right: -44%;
+    }
     .skills h2 {
         margin-bottom: 3rem;
     }
