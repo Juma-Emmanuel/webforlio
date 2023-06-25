@@ -25,7 +25,7 @@ body{
     --nav-link-load-time:1s;
 }
 section {
-    min-height: 100vh;
+    
     padding: 10rem 9% 2rem;
 }
 
@@ -384,33 +384,76 @@ animation: floatImage 4s ease-in-out infinite;
             opacity: 0;
         }
     }
-    
+    .c-bubbles img:nth-child(1),
     .bubbles img:nth-child(1){
         animation-delay: 2s;
     }
+    .c-bubbles img:nth-child(2),
     .bubbles img:nth-child(2){
         animation-delay: 1s;
     }
+    .c-bubbles img:nth-child(3),
     .bubbles img:nth-child(3){
         animation-delay: 3s;
     }
+    .c-bubbles img:nth-child(4),
     .bubbles img:nth-child(4){
         animation-delay: 4.5s;
     }
+    .c-bubbles img:nth-child(5),
     .bubbles img:nth-child(5){
         animation-delay: 3s;
     }
+    .c-bubbles img:nth-child(6),
     .bubbles img:nth-child(6){
         animation-delay: 6s;
     }
+    .c-bubbles img:nth-child(7),
     .bubbles img:nth-child(7){
         animation-delay:7s ;
     }
+    .c-bubbles img:nth-child(8),
     .bubbles img:nth-child(8){
         animation-delay: 5.3s;
     }
+    .c-bubbles{
+        width: 10px;
+        position: relative;
+        right: -80%;
+        display: flex;
+        
+      flex-direction: column;
+        justify-content: space-around;
+       
+    }
+    .c-bubbles img{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        
+        animation: c-bubble 10s linear infinite; 
+    }
+    @keyframes c-bubble{
+        0%{
+            transform: translateX(0);
+            opacity: 0;
+        }
+        50%{
+           
+            opacity: 1;
+        }
+        70%{
+           
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(-400vh);
+            opacity: 0;
+        }
+    }
     /*------------------------skills-------------------*/
     .skills{
+        min-height: 100vh;
         width: 100%;
         background: #191919;
         display: flex;
@@ -470,6 +513,7 @@ animation: floatImage 4s ease-in-out infinite;
         display: flex;
         align-items: center;
         flex-direction: column;
+        min-height: 100vh;
         
     }
    
@@ -521,6 +565,7 @@ animation: floatImage 4s ease-in-out infinite;
   /*-------------------------projects section-----------------------------*/
 .project{
     background: #191919;
+    min-height: 100vh;
 } 
 .toast {
     background-color: greenyellow;
@@ -631,6 +676,11 @@ transform: scale(1.1);
 .contact{
     background: #101010;
     overflow: hidden;
+    display: flex;
+}
+.form-container{
+    position: relative;
+    left: 30%;
 }
 .alert{
     width: 100%;
@@ -987,7 +1037,7 @@ color:#fff;
   }
   .about {
     flex-direction: column;
-    height: 109vh;
+    height: 115vh;
 }
 .about-img{
     padding: none;
@@ -1000,7 +1050,7 @@ margin-top: 1px;
 }
 .topp{
     flex-direction: column-reverse;
-    margin-top: -82px;
+    margin-top: -25px;
 }
 .sizedbox{
     height: 1px;
@@ -1075,6 +1125,16 @@ margin-top: 1px;
         }
         .project img{
             width: 90vw;
+        }
+        .contact{
+            height: 100%;
+        }
+        .form-container{
+            margin-top: 0;
+            left: 7%;
+        }
+        .c-bubbles{
+            right: -44%;
         }
 }
 

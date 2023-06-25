@@ -62,7 +62,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { orgin: 'top' });
-ScrollReveal().reveal('.home-img, .box1, .box2, .project-box, .contact form', { orgin: 'bottom' });
+ScrollReveal().reveal('.home-img, .card1, .card2, .project-box, .form-container', { orgin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { orgin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { orgin: 'right' });
 
