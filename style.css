@@ -1049,7 +1049,7 @@ color:#fff;
   }
   .about {
     flex-direction: column;
-    height: 115vh;
+    height: 100vh;
 }
 .about-img{
     padding: none;
