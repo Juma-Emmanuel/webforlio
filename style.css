@@ -1047,6 +1047,10 @@ color:#fff;
  .navbar{
     animation-duration: 500ms;
   }
+  .home{
+    max-height: 100vh;
+
+  }
   .about {
     flex-direction: column;
     height: 100vh;
