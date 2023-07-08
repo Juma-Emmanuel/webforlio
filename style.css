@@ -128,9 +128,9 @@ span{
 .home{
    
     background: #191919;
-    display: flex;
-    
+    display: flex;    
     align-items: center;
+    height: 100vh;
 }
   .home-content{
     font-size: 3.2rem;
@@ -1057,7 +1057,7 @@ color:#fff;
 }
 
 .about-content{
-    height: 47vh;    
+    height: 40vh;    
 margin-top: 1px;
 }
 .topp{
