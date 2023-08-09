@@ -742,7 +742,7 @@ transform: scale(1.1);
       }
       /*-----------------------achievement section-------------------------------*/
       #achievements {
-        background-color: #f5f5f5;
+        background: #191919;
         padding: 20px;
         margin-top: 20px;
       }
@@ -751,22 +751,24 @@ transform: scale(1.1);
         border: 1px solid #ccc;
         background-color: rgb(184, 175, 175);
         text-align: center;
-        width: 300px;
+        width: 500px;
         margin: 0 auto;
         border-radius: 20px;
       }
       .cert img{
-        width: 300px;
+        width: 500px;
         height: auto;
         border-radius: 20px 20px 0 0;
         
         }
         .cert h2{
             margin-top: 10px;
+            font-size: 23px
         }
         .cert p{
             margin-top: 10px;
             color: #fff;
+            font-size: 21px;
         }
         
       
