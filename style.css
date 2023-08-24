@@ -745,6 +745,10 @@ transform: scale(1.1);
         background: #191919;
         padding: 20px;
         margin-top: 20px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
       }
       
       .cert{
@@ -752,7 +756,7 @@ transform: scale(1.1);
         background-color: rgb(184, 175, 175);
         text-align: center;
         width: 500px;
-        margin: 0 auto;
+        margin-left: 67vh;
         border-radius: 20px;
       }
       .cert img{
@@ -885,6 +889,15 @@ color:#fff;
             
         }        
       }
+      .cert{
+        
+        width: 70vw;
+        margin-left: 10vh;
+            }
+    .cert img{
+        width: 70vw;
+
+    }
     
       
       /*------balls animation end -------*/
@@ -916,6 +929,15 @@ color:#fff;
     }
     .contact {
         min-height: auto;
+    }
+    .cert{
+        
+        width: 80vw;
+        margin-left: 0;
+            }
+    .cert img{
+        width: 80vw;
+
     }
 }
 @media(max-width:768px) {
@@ -1070,6 +1092,15 @@ color:#fff;
     .project-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .cert{
+        
+        width: 90vw;
+        margin: 0;
+            }
+    .cert img{
+        width: 90vw;
+
+    }
 }
 
 @media(max-width:617px) {
@@ -1184,6 +1215,15 @@ margin-top: 1px;
         }
         .c-bubbles{
             right: -19%;
+        }
+        .cert{
+        
+            width: 90vw;
+            margin: 0;
+                }
+        .cert img{
+            width: 90vw;
+    
         }
 }
 
